@@ -14,7 +14,7 @@ jobs:
         python-version:
           - "3.12"
           - "3.13"
-          - "3.14"
+          # - "3.14" # Does not work currently
 
     runs-on: ${{ matrix.os.name }}-latest
     name: ${{ matrix.os.icon }} Python ${{ matrix.python-version }}
