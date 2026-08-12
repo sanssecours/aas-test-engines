@@ -31,7 +31,8 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
-      - if: runner.os == 'macOS'
+      - name: Install macOS specific dependencies
+        if: runner.os == 'macOS'
         run: brew install bash
 
       - name: Install dependencies
